@@ -13,8 +13,8 @@ export default function SiteFooter() {
           <div className="space-y-4">
             <Logo/>
             <p className="text-sm text-gray-400">
-              From admissions to acdemics, simplify every aspect of your institution's
-              management with M-ERP's all-in-one solution.
+              From admissions to acdemics, simplify every aspect of your institution&rsquo;s
+              management with M-ERP&rsquo;s all-in-one solution.
             </p>
 
             {/* Socials */}
