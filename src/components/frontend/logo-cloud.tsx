@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import SmallBadge from './small-badge';
 
 export default function LogoCloud() {
   const schools = [
@@ -20,7 +21,8 @@ export default function LogoCloud() {
   const duplicatedSchools = [...schools, ...schools];
 
   return (
-    <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-24 sm:py-32 overflow-hidden h-32">
+    <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-24 sm:py-8 overflow-hidden h-full">
+      <span className="flex items-center justify-center"><SmallBadge title="Our Clients"/></span>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg/8 font-semibold text-teal-900 mb-10">
           Trusted by the Leading Institutions Worldwide
@@ -34,7 +36,7 @@ export default function LogoCloud() {
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-emerald-50 to-transparent z-10"></div>
           
           {/* Scrolling Container */}
-          <div className="flex overflow-hidden">
+          <div className="h-24 flex overflow-hidden">
             <div className="flex animate-scroll">
               {duplicatedSchools.map((school, index) => (
                 <div
@@ -42,7 +44,7 @@ export default function LogoCloud() {
                   className="flex-shrink-0 mx-8 flex items-center justify-center group"
                 >
                   <img
-                    className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110"
+                    className="h-20 w-auto grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 group-hover:scale-110"
                     src={school.logo}
                     alt={school.name}
                   />

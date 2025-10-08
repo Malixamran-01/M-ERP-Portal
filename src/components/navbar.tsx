@@ -208,7 +208,7 @@ export default function GlassmorphismNavbar() {
                 Log in
               </Button>
               <Button className="bg-emerald-500 hover:bg-emerald-600 text-white border-0 shadow-lg shadow-emerald-500/30">
-                Sign up
+                <Link href="/contact-us">Book Demo</Link>
               </Button>
             </div>
 

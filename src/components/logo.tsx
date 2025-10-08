@@ -8,7 +8,7 @@ export default function Logo() {
               <div className="bg-teal-600 rounded-full p-1">
                 <span className="text-white font-bold text-xl"><GraduationCap/></span>
               </div>
-              <span className="font-bold text-xl">M- <span className="text-teal-700">ERP</span> </span>
+              <span className="font-bold text-xl text-emerald-600">M- <span className="text-teal-700">ERP</span> </span>
             </Link>
   )
 }

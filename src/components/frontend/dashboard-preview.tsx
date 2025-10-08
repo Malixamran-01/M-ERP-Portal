@@ -9,9 +9,10 @@ export function DashboardPreview() {
   return (
     <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-24 sm:py-32">
       <div className="flex justify-center mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-emerald-200 shadow-sm text-sm font-medium text-teal-800">
+          {/* <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-emerald-200 shadow-sm text-sm font-medium text-teal-800">
             ✨ Dashboard Preview
-          </span>
+          </span> */}
+          <SmallBadge title="Dashboard Preview" />
         </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl border border-emerald-100/50 overflow-hidden">
