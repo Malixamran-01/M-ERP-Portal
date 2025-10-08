@@ -23,10 +23,10 @@ export default function PricingSection() {
             <div className="inline-flex">
             </div>
             <h3 className="text-2xl font-bold text-teal-900">
-              Choose the plan that fits your institution's needs.
+              Choose the plan that fits your institution&apos;s needs.
             </h3>
             <p className="text-gray-700">
-              Whether you're a small madarsa or a large educational institution, our pricing plans are designed to scale with you.
+              Whether you&apos;re a small madarsa or a large educational institution, our pricing plans are designed to scale with you.
             </p>
           </div>
           <div>
