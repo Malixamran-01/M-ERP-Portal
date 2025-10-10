@@ -1,25 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2020",                     // Modern JS target
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    "allowJs": true,                        // Allow JS files in the project
+    "skipLibCheck": true,                   // Skip type checking of node_modules
+    "strict": true,                         // Enable all strict checks
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,                         // No JS output (Next handles build)
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",             // Node module resolution (safe for Next.js)
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": true,                // Required for Next.js
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
         "name": "next"
-      },
+      }
     ],
+    "baseUrl": ".",                         // Base path for imports
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]                      // Alias for src folder
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
